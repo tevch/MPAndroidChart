@@ -26,6 +26,8 @@ public class LineDataSet extends LineRadarDataSet<Entry> {
 
     /** if true, drawing circles is enabled */
     private boolean mDrawCircles = true;
+    
+    private boolean mBottomValues = false;
 
     /** if true, cubic lines are drawn instead of linear */
     private boolean mDrawCubic = false;
@@ -162,6 +164,13 @@ public class LineDataSet extends LineRadarDataSet<Entry> {
      */
     public boolean isDrawCirclesEnabled() {
         return mDrawCircles;
+    }
+    
+    public void setBottomValues(boolean bottomValues) {
+    	this.mBottomValues = bottomValues;
+    }
+    public boolean isBottomValues() {
+    	return mBottomValues;
     }
 
     /**
