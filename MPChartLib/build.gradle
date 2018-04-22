@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '25.0.0'
+    buildToolsVersion "27.0.3"
     // resourcePrefix 'mpcht'
     defaultConfig {
         minSdkVersion 8
@@ -32,6 +32,6 @@ android {
 
 dependencies {
     //compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:19.+'
-    compile 'com.nineoldandroids:library:2.4.+'
+    implementation 'com.android.support:support-v4:19.+'
+    api 'com.nineoldandroids:library:2.4.+'
 }
